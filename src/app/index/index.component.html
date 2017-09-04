@@ -1,0 +1,9 @@
+<h2>Top Songs</h2>
+ <ng-container *ngIf="topSongs"> 
+    <h3>Results: {{topSongs.length}} songs and artists</h3>
+    <ul class="hits">
+      <li *ngFor="let info of topSongs">
+        Song: {{info.songname}}, by: {{info.artistname}}
+      </li>
+    </ul>
+ </ng-container>

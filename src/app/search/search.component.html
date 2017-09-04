@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Search songs:</h3>
+  <form>
+    <input type="text" [(ngModel)]="output" name="output" placeholder="Search..." >
+    <button type="submit" (click)="showResult(output)">Go</button>
+  </form>
+  <p>{{result}}<span id='display'></span></p>
+</div>
