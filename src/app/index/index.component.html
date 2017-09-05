@@ -3,7 +3,8 @@
     <h3>Results: {{topSongs.length}} songs and artists</h3>
     <ul class="hits">
       <li *ngFor="let info of topSongs">
-        Song: {{info.songname}}, by: {{info.artistname}}
+        Song: <a routerLink="/song/{{info.name}}">{{info.name}}</a>
+        , by: <a routerLink="/artist/{{info.artist.name}}">{{info.artist.name}} </a>
       </li>
     </ul>
  </ng-container>
