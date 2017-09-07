@@ -11,6 +11,7 @@ import { SongComponent } from './song/song.component'; //added for api
 import {routes} from './app.routes';
 import {RouterModule, Routes} from '@angular/router';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import {RouterModule, Routes} from '@angular/router';
     IndexComponent,
     ArtistComponent,
     SongComponent
+
   ],
   imports: [
     BrowserModule,

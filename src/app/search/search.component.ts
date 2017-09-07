@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   }
 
   showResult(output: string) {
-    console.log('function gets called: ' + output); 
+    console.log('Search function gets called: ' + output); 
     this.result = output;
   }
 }

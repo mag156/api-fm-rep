@@ -1,3 +1,12 @@
-<p>
-  song works!
-</p>
+<h2>Song info</h2>
+<ng-container *ngIf="song_info" > 
+  <ul>
+            <li><strong>Song name: </strong>{{song_info.name}}</li><br>
+            <li><strong>Song duration: </strong>{{song_info.duration}}</li><br>
+            <li><strong>Song playcount: </strong>{{song_info.playcount}}</li><br>
+            <li><strong>Song listeners: </strong>{{song_info.listeners}}</li><br>
+            <li><strong>Song Mbid: </strong>{{song_info.mbid}}</li><br>
+            <li><strong>Song URL: </strong>{{song_info.url}}</li>
+  </ul>
+</ng-container>
+<app-artist></app-artist>

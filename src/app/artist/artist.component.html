@@ -1,8 +1,8 @@
-<ng-container *ngIf="artist-info">
-  <h3>Artist information:</h3>
+<h2>Artist information:</h2>
+<ng-container *ngIf="artist_info" border="2"> 
   <ul>
-    <li>{{artist-info.name}}</li>
-    <li>{{artist-info.mbid}}</li>
-    <li>{{artist-info.url}}</li>
+      <td><strong>Artist name: </strong>{{artist_info.artist.name}}</td><br>
+      <td><strong>Artist Mbid: </strong>{{artist_info.artist.mbid}}</td><br>
+      <td><strong>Artist URL: </strong>{{artist_info.artist.url}}</td>
   </ul>
 </ng-container>
