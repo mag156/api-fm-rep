@@ -3,6 +3,7 @@ import {SongService} from './song.service';
 import {ActivatedRoute} from '@angular/router';
 import {Song} from './song';
 import {ArtistComponent} from '../artist/artist.component';
+import {Artist} from '../artist/artist';
 
 @Component({
   selector: 'app-song',
@@ -24,8 +25,8 @@ public arts;
       this.songservice.getAll(this.arts,this.sng).subscribe(
         data => {this.song_info = data.track;},
         error => console.log(error)
-      )
-    })
+      );
+    });
   }
 
 }

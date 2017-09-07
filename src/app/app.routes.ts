@@ -7,5 +7,5 @@ export const routes: Routes = [
     {path: '', component: IndexComponent},
     {path: 'artist/:mbid', component: ArtistComponent},
     {path: 'song/:artist_name/:song_name', component:SongComponent, children: [
-        {path: 'artist/:mbid', component: ArtistComponent}]}
+        {path: 'artist/:artist_name/:song_name', component: ArtistComponent}]}
 ];

@@ -1,3 +1,4 @@
+import {Artist} from '../artist/artist';
 export class Song {
     name: string = '';
     duration: string = '';
@@ -5,4 +6,5 @@ export class Song {
     listeners: string = '';
     mbid: string = '';
     url: string = '';
+    artist: Artist;
 } 

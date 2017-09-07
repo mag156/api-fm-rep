@@ -9,4 +9,4 @@
             <li><strong>Song URL: </strong>{{song_info.url}}</li>
   </ul>
 </ng-container>
-<app-artist></app-artist>
+<app-artist *ngIf="song_info" [artistId] = "song_info.artist.mbid"></app-artist>
